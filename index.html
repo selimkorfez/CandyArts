@@ -476,7 +476,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#impact">Impact</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -560,62 +559,12 @@
         </div>
     </section>
 
-    <!-- Impact Section -->
-    <section class="impact" id="impact">
-        <div class="impact-container">
-            <h2 class="section-title">Our Impact</h2>
-            <p>Since our founding, we've been making a real difference in communities across the UK</p>
-            
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <div class="stat-label">Individuals Trained</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <div class="stat-label">Workshops Delivered</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">25+</span>
-                    <div class="stat-label">Charities Supported</div>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">85%</span>
-                    <div class="stat-label">Positive Outcomes</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="contact-container">
             <h2 class="section-title">Get In Touch</h2>
-            <p>Ready to start your creative journey or need support for your organization? We'd love to hear from you.</p>
-            
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="organization">Organization (if applicable)</label>
-                    <input type="text" id="organization" name="organization">
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">How can we help you?</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            <p>The contact form is not connected yet. Please use Candy Arts CIC's official
+            contact channels until an approved form destination is available.</p>
         </div>
     </section>
 
@@ -656,29 +605,6 @@
                 navbar.style.background = 'rgba(255, 255, 255, 0.95)';
                 navbar.style.boxShadow = 'none';
             }
-        });
-
-        // Form submission
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const submitBtn = document.querySelector('.submit-btn');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = 'Sending...';
-            submitBtn.disabled = true;
-            
-            // Simulate form submission
-            setTimeout(() => {
-                submitBtn.textContent = 'Message Sent!';
-                submitBtn.style.background = '#06d6a0';
-                
-                setTimeout(() => {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                    submitBtn.style.background = '';
-                    this.reset();
-                }, 2000);
-            }, 1000);
         });
 
         // Intersection Observer for animations
